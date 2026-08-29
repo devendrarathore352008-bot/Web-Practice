@@ -1,6 +1,6 @@
 # Web Development Practice & Assignments
 
-This Repository Contains All The Practices & Assignments Of Web Development Class
+This Repository Contains All The Practices & Assignments Of Web Developmen 
 
 ---
 
