@@ -6,6 +6,109 @@
     <title>Register Page</title>
 </head>
 <body>
-    <h1>This is the register page</h1>
+    <header>
+        <!-- Logo -->
+         <div>
+            <img src="./image/small_logo.png" alt="dysank small logo" height="35">
+            <img src="./image/large_logo.png" alt="dysank large logo" height="35">
+         </div>
+
+        <!-- Nav link -->
+         <nav>
+            <ul>
+                <li> <a href="./index.html">Home Page</a></li>
+                <li> <a href="./about.html">About Us</a> </li>
+                <li> <a href="./student.html">For Student</a> </li>
+                <li> <a href="./tutor.html">For Tutor</a></li>
+                <li> <a href="./contact.html">Contact Us</a></li>
+            </ul>
+         </nav>
+    </header>
+    
+    <h1>Welcome To Registration Page</h1>
+
+    <div>
+        <h2>Registration Form</h2>
+    </div>
+
+    <div>
+        <form>
+        <div>
+          <lable for="reg-name">Full Name</lable><br />
+          <input type="text" placeholder="David Anthony" required />
+        </div>
+
+        <div>
+          <label for="gender">Gender</label>
+          <select name="id">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="DOB">DOB</label>
+          <input type="date" />
+        </div>
+
+        <div>
+          <label for="mobile number">Mobile Number</label><br />
+          <select name="id">
+            <option value="+91">+91 IND</option>
+            <option value="+845">+845 USA</option>
+          </select>
+          <input type="number" placeholder="Enter Your Number" />
+        </div>
+
+        <div>
+          <label for="reg-email">Email</label><br />
+          <input
+            type="text"
+            placeholder="abcd12345@example.com"
+            name="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="reg-password">Password</label><br />
+          <input
+            type="password"
+            name="password"
+            required
+            
+          />
+          <small>Must include a capital letter and numbers</small>
+          
+        </div>
+
+        <div>
+          <label for="reg-confirm-password">Confirm Password</label><br />
+          <input
+            type="password"
+            name="confirm-password"
+            required
+          />
+          <small>Must include a capital letter and numbers</small>
+        </div>
+
+        <div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+      <div>
+        <label for="login">Login:</label> 
+        <a href="./login.html"><button type="submit"></button></a>
+      </div>
+
+    </div>
+
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Devendra Rathore. All rights reserved. I created it for practice purpose.</p>
+        <hr>
+    </footer>
 </body>
 </html>

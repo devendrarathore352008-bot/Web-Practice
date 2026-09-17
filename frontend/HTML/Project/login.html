@@ -1,11 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-</head>
-<body>
-    <h1>This is the login page</h1>
-</body>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <div>
+        <img src="./image/small_logo.png" alt="dysank small logo" height="35" />
+        <img src="./image/large_logo.png" alt="dysank large logo" height="35" />
+      </div>
+
+      <!-- Nav link -->
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home Page</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./student.html">For Student</a></li>
+          <li><a href="./tutor.html">For Tutor</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Welcome To Login Page</h1>
+
+    <div>
+      <h2>Login Form</h2>
+    </div>
+
+    <div>
+      <form>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" required />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input type="password" required />
+        </div>
+
+        <div>
+          <button type="submit">Login</button><br>
+        </div>
+      </form>
+      <section>
+        <label for="new-user">New User:</label>
+          <a href="./register.html"><button type="submit">Register</button></a>
+      </section>
+
+
+      <footer>
+        <hr />
+        <p>
+          &copy; 2026 Devendra Rathore. All rights reserved. I created it for
+          practice purpose.
+        </p>
+        <hr />
+      </footer>
+    </div>
+  </body>
 </html>
