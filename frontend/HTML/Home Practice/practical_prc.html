@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="../Project/image/large_logo.png"
+          alt="logo image"
+          height="35px"
+        />
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Student Registration Form</h1>
+
+        <form>
+          <div>
+            <label for="register_name">Full Name</label>
+            <input type="text" placeholder="Example: Monu" required />
+          </div><br />
+          <div>
+            <label for="register_email">Email Address</label>
+            <input type="email" placeholder="monu12@example.com0" required />
+          </div>
+          <br />
+          <div>
+            <label for="register_dob">DOB</label>
+            <input type="date" required />
+          </div>
+          <br />
+          <div>
+            <label for="register_gender">Gender</label>
+            <select name="register_gender">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <h2>Fields Of Interests</h2>
+            <label for="sports">Sports</label>
+            <input type="checkbox" />
+
+            <lable for="music">Music</lable>
+            <input type="checkbox" />
+
+            <label for="coding">Coding</label>
+            <input type="checkbox" /><br />
+
+            <label for="course_selection">Course</label>
+            <select>
+              <option>BCA</option>
+              <option>BBA</option>
+              <option>B.Com</option>
+              <option>B.Tech.</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
