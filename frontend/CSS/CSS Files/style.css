@@ -1,0 +1,93 @@
+/*    * is a universal selector     */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* h1 ,h2,... div and others are tag selector */
+
+ul{
+    color: white;
+    padding-left: 20px;
+}
+
+h1{
+    color: rgb(245, 241, 36);
+}
+
+h2{
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+/* For (id) selector we use # and id-name  */
+
+#line-1{
+    color: black;
+    font-size: 40px;
+    background-color: aqua;
+    border: 1px solid burlywood;
+    height: 50px;
+    width: 250px;
+}
+
+#line-2{
+    color: rgb(240, 241, 237);
+    font-size: 40px;
+    background-color: rgb(121, 7, 102);
+    border: 1px solid burlywood;
+    height: 50px;
+    width: 350px;
+}
+
+#line-3{
+    color: black;
+    font-size: 40px;
+    background-color: coral;
+    border: 1px solid rgb(187, 133, 62);
+    height: 50px;
+    width: 450px;
+}
+
+#line-4{
+    color: rgb(253, 252, 252);
+    font-size: 40px;
+    background-color:rgb(150, 87, 36);
+    border: 1px solid burlywood;
+    height: 50px;
+    width: 550px;
+}
+
+/* For (class) selector we use . and class-name */
+
+.items{
+    border: 2px solid black;
+    text-align: justify;
+    width: 300px;
+    height: auto;
+}
+
+.item-1{
+    border: 1px solid rgb(124, 6, 6);
+    background-color: aqua;
+    height: auto;
+    width:auto;
+}
+
+.item-2{
+    border: 1px solid rgb(124, 6, 6);
+    background-color: rgb(88, 3, 56);
+    height: auto;
+    width:auto;
+}
+
+.item-3{
+    border: 1px solid rgb(124, 6, 6);
+    background-color: rgb(21, 133, 6);
+    height: auto;
+    width:auto;
+}
+
+
