@@ -1,0 +1,229 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+:root{
+            --primary: #1E40AF;
+            --accent: #F59E0B;
+            --dark: #0F172A;
+            --light: #F8FAFC;
+            --text: #1E293B;
+         }
+
+/* #hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    background-color: var(--primary) ;
+    color: var(--light);
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* Optional: use flexbox if the container's children need side-by-side layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+#hero-section {
+    background-color: #1E40AF;
+    padding: 80px 0; /* Padding top and bottom, 0 on sides */
+    width: 100%;
+    color: var(--light);
+}
+
+#h-text-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+}
+
+#h-image-part{
+    flex: 1;
+}
+
+#h-image-part img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+#small-badge{
+    padding: 6px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+    font-size: 14px;
+    margin: 0;
+}
+
+#h-text-part h1{
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+#h-text-part p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#text-btn{
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.explore-btn{
+    background-color: var(--accent);
+    color: var(--light);
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact-btn{
+    background-color: transparent;
+    border: 2px solid var(--light);
+    color: var(--light);
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+.contact-btn:hover {
+    background-color: var(--light);
+    color: #1E40AF;
+}
+
+
+
+.about-section {
+    background-color: #F8FAFC; /* Light background */
+    padding: 80px 0; 
+    width: 100%;
+}
+
+.image-text-portion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px; /* Gap goes on the parent container */
+}
+
+/* 50/50 Column Split */
+.image-portion, .text-portion {
+    flex: 1; /* Forces both sides to take exactly 50% width */
+}
+
+/* Image Styling */
+.image-portion img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Right Column Stacking */
+.text-portion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* Even spacing between text elements */
+}
+
+/* Small Colored Label */
+.about-us-label {
+    background-color: #E0E7FF; /* Light blue */
+    color: #1E40AF; /* Primary color */
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Typography resets */
+.text-portion h2 { margin: 0; font-size: 36px; line-height: 1.2; }
+.text-portion p { margin: 0; line-height: 1.6; }
+
+/* List with checkmarks */
+.about-us-points {
+    list-style: none; /* Removes default black bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-us-points li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-us-points span {
+    color: #1E40AF; /* Primary color checkmarks */
+    font-weight: bold;
+}
+
+/* Stats Row */
+.cards {
+    display: flex;
+    gap: 32px;
+    margin-top: 10px;
+}
+
+.cards div {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards strong {
+    font-size: 28px;
+    color: #1E40AF;
+}
+
+.cards span {
+    font-size: 14px;
+    color: #64748B;
+}
+
+/* Primary Button */
+.read-button {
+    background-color: #1E40AF;
+    color: #F8FAFC;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 12px;
+    transition: opacity 0.3s;
+}
+
+.read-button:hover {
+    opacity: 0.9;
+}

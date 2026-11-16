@@ -1,0 +1,97 @@
+         @import url('https://googleapis.com');
+
+         :root{
+            --primary: #1E40AF;
+            --accent: #F59E0B;
+            --dark: #0F172A;
+            --light: #F8FAFC;
+            --text: #1E293B;
+         }
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            font-family: 'Poppins',sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--text);
+            background-color: var(--light);
+
+        }
+
+        #header{
+            display: flex;
+            justify-content: space-between;
+            color: #F8FAFC;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #logo{
+            margin-left: 20px;
+            width: auto;
+        }
+
+        #logo a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        
+        }
+
+        #logo img {
+            height: 40px;
+            width:auto;
+        }
+
+        #logo span {
+            font-size: 24px;
+            font-weight: 600;
+            color:#0F172A;
+        }
+
+        #nav-bar{
+            color: #F8FAFC;
+            display: flex;
+            gap: 1rem;
+    
+        }
+
+        #nav-bar ul li a{
+            color: #1e293B;
+            text-decoration: none;
+            padding: 10px 15px;
+            
+        }
+
+        #nav-bar ul{
+            list-style: none;
+            display: flex;
+        }
+
+        #nav-bar ul li a:hover{
+            background-color: #1E40AF;
+            color: #F8FAFC;
+            
+            border-radius: 8px;
+        }
+
+        .apply-btn{
+            text-decoration: none;
+            color: #1e293B;
+            background-color: #F59E0B;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-right: 20px;
+            margin-bottom: 5px;
+        }
+
+        .apply-btn:hover{
+            background-color: #1E40AF;
+            color: #F8FAFC;
+        }
