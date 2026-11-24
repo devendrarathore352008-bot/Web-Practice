@@ -9,7 +9,14 @@
             --dark: #0F172A;
             --light: #F8FAFC;
             --text: #1E293B;
+            --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
          }
+
+         body{
+            font-family: 'Pippons',sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
 
 /* #hero-section{
     display: flex;
@@ -27,7 +34,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    /* Optional: use flexbox if the container's children need side-by-side layout */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +42,7 @@
 
 #hero-section {
     background-color: #1E40AF;
-    padding: 80px 0; /* Padding top and bottom, 0 on sides */
+    padding: 80px 0; 
     width: 100%;
     color: var(--light);
 }
@@ -62,7 +68,7 @@
 #small-badge{
     padding: 6px 16px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.15); 
     font-size: 14px;
     margin: 0;
 }
@@ -118,9 +124,10 @@
 }
 
 
+/* About Section */
 
 .about-section {
-    background-color: #F8FAFC; /* Light background */
+    background-color: #F8FAFC; 
     padding: 80px 0; 
     width: 100%;
 }
@@ -132,46 +139,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 56px; /* Gap goes on the parent container */
+    gap: 56px;
 }
 
-/* 50/50 Column Split */
+
 .image-portion, .text-portion {
-    flex: 1; /* Forces both sides to take exactly 50% width */
+    flex: 1; 
 }
 
-/* Image Styling */
+
 .image-portion img {
     width: 100%;
     border-radius: 12px;
     object-fit: cover;
 }
 
-/* Right Column Stacking */
+
 .text-portion {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px; /* Even spacing between text elements */
+    gap: 20px; 
 }
 
-/* Small Colored Label */
 .about-us-label {
-    background-color: #E0E7FF; /* Light blue */
-    color: #1E40AF; /* Primary color */
+    background-color: #E0E7FF;
+    color: #1E40AF; 
     padding: 4px 16px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 600;
 }
 
-/* Typography resets */
+
 .text-portion h2 { margin: 0; font-size: 36px; line-height: 1.2; }
 .text-portion p { margin: 0; line-height: 1.6; }
 
-/* List with checkmarks */
+
 .about-us-points {
-    list-style: none; /* Removes default black bullets */
+    list-style: none; 
     padding: 0;
     margin: 0;
     display: flex;
@@ -186,11 +192,11 @@
 }
 
 .about-us-points span {
-    color: #1E40AF; /* Primary color checkmarks */
+    color: #1E40AF; 
     font-weight: bold;
 }
 
-/* Stats Row */
+
 .cards {
     display: flex;
     gap: 32px;
@@ -212,7 +218,7 @@
     color: #64748B;
 }
 
-/* Primary Button */
+
 .read-button {
     background-color: #1E40AF;
     color: #F8FAFC;
@@ -227,3 +233,26 @@
 .read-button:hover {
     opacity: 0.9;
 }
+
+
+
+
+
+/* COURSES SECTION */
+
+.course .container{display: flex; flex-direction: column;}
+.course .container h3{text-align: center; margin-bottom: 10px;}
+.course{
+    background-color: var(--light);
+}
+
+.course .course-grid{display: grid; grid-template-columns: repeat(4,1fr) ; gap: 24px; margin-bottom: 50px;}
+.course .course-card{overflow: hidden; border: 1px  solid var(white); border-radius: 8px; box-shadow: var(--shadow); transition: transform .3s ease, box-shadow .3s ease; }
+.course .course-card:hover{transform: translateY(-7px); box-shadow: 0 15px 30px rgba(15,23,42,.13); }
+.course .course-card-image{position: relative; height: 165px; overflow: hidden; background: #DBEAFE;}
+.course .course-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.course .course-card:hover .course-card-image img { transform: scale(1.06); }
+.course .course-card-body{position: relative; padding: 23px 20px 20px;}
+.course .course-card-body h4{color:darkblue; font-weight: 400; font-size: large; margin-bottom: 10px;}
+.course .course-duration{background-color: #dce7fd; color: #183473; padding: 8px 15px; border-radius: 10px;}
+.course{box-shadow: 0 15px 30px rgba(15,23,42,.13);}
